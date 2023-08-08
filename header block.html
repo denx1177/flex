@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header BLock</title>
+    <style>
+        .block {
+            box-sizing: border-box;
+            width: 98%;
+            background: #795548;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-left: 1%;
+            margin-top: 5px;
+            margin-bottom: 100px;
+            border: 10px solid #111111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .block h2 {
+            color: #feea3b;
+            overflow: hidden;
+            font-weight: normal;
+            margin-top: 0;
+            text-align: center;
+        }
+        
+        .block h2::before,
+        .block h2::after {
+            content: '';
+            background: #aeea3b;
+            display: inline-block;
+            height: 1px;
+            position: relative;
+            vertical-align: middle;
+            width: 10%;
+        }
+        
+        .block h2::before {
+            right: 10px;
+            margin-left: -50%;
+        }
+        
+        .block h2::after {
+            left: 10px;
+            margin-right: -50%;
+        }
+        .block p {
+            text-align: center;
+        }
+        </style>
+</head>
+
+<body>
+    <section class="block">
+        <h2>Апперцепция</h2>
+        <p>Гештальт, как бы это ни казалось парадоксальным,
+            понимает культурный комплекс, к тому же этот вопрос
+            касается чего-то слишком общего.</p>
+    </section>
+    Привет
+</body>
+
+</html>
